@@ -1,0 +1,26 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout-main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  transition: grid-template-columns 300ms ease;
+  &.sidenavClosed {
+    grid-template-columns: 0 1fr;
+  }
+}
+
+.layout-sidenav {
+  resize: horizontal;
+  overflow-x: hidden;
+  padding: 0.5rem ;
+}
+
+.layout-content {
+  overflow-y: auto;
+}

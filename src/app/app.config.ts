@@ -3,7 +3,7 @@ import { provideRouter } from "@angular/router";
 import { providePrimeNG } from "primeng/config";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import Noir from "./app.preset";
-
+import Aura from "@primeng/themes/aura"
 import { routes } from "./app.routes";
 
 export const appConfig: ApplicationConfig = {
@@ -15,7 +15,7 @@ export const appConfig: ApplicationConfig = {
       theme: {
         preset: Noir,
         options: {
-            darkModeSelector: false || 'none',
+            darkModeSelector: '.dark-mode',
         }
       }
     })

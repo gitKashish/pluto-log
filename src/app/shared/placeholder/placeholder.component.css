@@ -1,0 +1,10 @@
+.placeholder {
+    display: block;
+    width: 25rem;
+    margin:auto;
+}
+
+.container {
+    height: 100%;
+    align-content: center;
+}

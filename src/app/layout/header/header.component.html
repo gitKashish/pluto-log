@@ -1,0 +1,13 @@
+<header class="header">
+  <p-button (click)="toggleSidenav.emit()"
+  [outlined]="true"
+  severity="secondary"
+  icon="pi pi-bars" 
+  aria-label="Toggle Menu"></p-button>
+  <p-button (click)="toggleUiMode()"
+    [outlined]="true"
+    severity="secondary"
+    [icon]="uiMode"
+    aria-label="Toggle Menu"></p-button>
+  <span class="logo">log</span>
+</header>

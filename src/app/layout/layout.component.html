@@ -1,0 +1,12 @@
+<div class="layout">
+  <app-header (toggleSidenav)="toggleSidenav()"></app-header>
+
+  <div class="layout-main" [class.sidenavClosed]="!sidenavOpen()">
+    <app-sidenav class="layout-sidenav"></app-sidenav>
+
+    <main class="layout-content">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+  <app-footer></app-footer>
+</div>
